@@ -70,29 +70,48 @@ ul {
   margin-bottom: 2rem;
 }
 
-/* Timeline */
-.timeline ul {
-  list-style: none;
-  padding: 0;
-}
-
-.timeline li {
-  padding: 1rem 0;
+/* Timeline Enhancements */
+.timeline details {
   border-left: 4px solid #00778b;
   padding-left: 1rem;
-  margin-left: 0.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.timeline summary {
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 0.5rem 1rem 2rem;
   position: relative;
 }
 
-.timeline li::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background: #00778b;
-  border-radius: 50%;
+.timeline summary::before {
+  content: \"📍\";
   position: absolute;
-  left: -7px;
+  left: 0;
   top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.timeline details[open] summary {
+  background-color: #e6f7fa;
+  border-left: 4px solid #0d1b2a;
+}
+
+.timeline details p {
+  padding: 0 1rem 1rem 2rem;
+  animation: fadeIn 0.3s ease-in-out;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Contact */
