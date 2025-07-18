@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Pete Hallett
+Instagram: https://www.instagram.com/recovering.founder
+Threads: https://www.threads.com/@recovering.founder
+GitHub: https://github.com/digipete
+From: UK
+
+/* SITE */
+Last updated: 2025-07-16
+Standards: HTML5, CSS3

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pete.hallett.life/sitemap.xml
